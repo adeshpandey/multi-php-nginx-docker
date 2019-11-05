@@ -1,0 +1,6 @@
+{
+    "require": {
+        "predis/predis": "^1.1",
+        "giggsey/libphonenumber-for-php": "^8.10"
+    }
+}

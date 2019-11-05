@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/voicetree/vt-new/engine-v3/application/controllers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../.css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../.css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href="../.css/style.css" rel="stylesheet" type="text/css">
+  <link href="../.css/custom.css" rel="stylesheet" type="text/css">
+  <!--[if lt IE 9]>
+  <script src="../.js/html5shiv.min.js"></script>
+  <script src="../.js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../index.html">/home/voicetree/vt-new/engine-v3/application</a></li>
+        <li><a href="index.html">controllers</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="CallProcessor.php.html#4">CallProcessor</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClickOCallNew.php.html#4">ClickOCallNew</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Engine.php.html#10">Engine</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="KamailioCache.php.html#28">KamailioCache</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Landline.php.html#4">Landline</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LogVerifier.php.html#4">LogVerifier</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SyncLog.php.html#4">SyncLog</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Test.php.html#5">Test</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transfer.php.html#19">Transfer</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="WebRtc.php.html#7">WebRtc</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="WebRtcTransfer.php.html#7">WebRtcTransfer</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Welcome.php.html#4">Welcome</a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Engine.php.html#10">Engine</a></td><td class="text-right">20592</td></tr>
+       <tr><td><a href="CallProcessor.php.html#4">CallProcessor</a></td><td class="text-right">4032</td></tr>
+       <tr><td><a href="Transfer.php.html#19">Transfer</a></td><td class="text-right">1640</td></tr>
+       <tr><td><a href="ClickOCallNew.php.html#4">ClickOCallNew</a></td><td class="text-right">1482</td></tr>
+       <tr><td><a href="Welcome.php.html#4">Welcome</a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="LogVerifier.php.html#4">LogVerifier</a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="WebRtc.php.html#7">WebRtc</a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="Test.php.html#5">Test</a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="Landline.php.html#4">Landline</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="WebRtcTransfer.php.html#7">WebRtcTransfer</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="KamailioCache.php.html#28">KamailioCache</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="SyncLog.php.html#4">SyncLog</a></td><td class="text-right">20</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="CallProcessor.php.html#10"><abbr title="CallProcessor::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transfer.php.html#309"><abbr title="Transfer::dialNow">dialNow</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SyncLog.php.html#14"><abbr title="SyncLog::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Test.php.html#7"><abbr title="Test::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Test.php.html#14"><abbr title="Test::mt">mt</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Test.php.html#20"><abbr title="Test::rt">rt</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Test.php.html#26"><abbr title="Test::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Test.php.html#39"><abbr title="Test::createWebrtc">createWebrtc</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Test.php.html#59"><abbr title="Test::testIVR">testIVR</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Test.php.html#73"><abbr title="Test::testASM">testASM</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transfer.php.html#26"><abbr title="Transfer::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transfer.php.html#78"><abbr title="Transfer::set_sound_file">set_sound_file</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transfer.php.html#86"><abbr title="Transfer::init">init</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transfer.php.html#137"><abbr title="Transfer::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transfer.php.html#229"><abbr title="Transfer::dailDepartmentUsers">dailDepartmentUsers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transfer.php.html#331"><abbr title="Transfer::dead">dead</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LogVerifier.php.html#10"><abbr title="LogVerifier::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Transfer.php.html#401"><abbr title="Transfer::setTransferrer">setTransferrer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="WebRtc.php.html#14"><abbr title="WebRtc::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="WebRtc.php.html#36"><abbr title="WebRtc::init">init</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="WebRtc.php.html#52"><abbr title="WebRtc::process">process</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="WebRtc.php.html#189"><abbr title="WebRtc::dead">dead</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="WebRtcTransfer.php.html#12"><abbr title="WebRtcTransfer::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="WebRtcTransfer.php.html#28"><abbr title="WebRtcTransfer::init">init</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="WebRtcTransfer.php.html#43"><abbr title="WebRtcTransfer::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Welcome.php.html#23"><abbr title="Welcome::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Welcome.php.html#30"><abbr title="Welcome::tt">tt</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Welcome.php.html#34"><abbr title="Welcome::xyz">xyz</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Welcome.php.html#61"><abbr title="Welcome::ttw">ttw</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Welcome.php.html#91"><abbr title="Welcome::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Welcome.php.html#154"><abbr title="Welcome::tests">tests</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SyncLog.php.html#6"><abbr title="SyncLog::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LogVerifier.php.html#6"><abbr title="LogVerifier::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CallProcessor.php.html#89"><abbr title="CallProcessor::callerHungup">callerHungup</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Engine.php.html#505"><abbr title="Engine::normalIVR">normalIVR</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CallProcessor.php.html#154"><abbr title="CallProcessor::agentAnswered">agentAnswered</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CallProcessor.php.html#248"><abbr title="CallProcessor::calleeHungup">calleeHungup</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CallProcessor.php.html#394"><abbr title="CallProcessor::updateVoicemail">updateVoicemail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClickOCallNew.php.html#9"><abbr title="ClickOCallNew::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClickOCallNew.php.html#57"><abbr title="ClickOCallNew::init">init</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClickOCallNew.php.html#80"><abbr title="ClickOCallNew::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClickOCallNew.php.html#283"><abbr title="ClickOCallNew::dead">dead</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ClickOCallNew.php.html#455"><abbr title="ClickOCallNew::set_sound_file">set_sound_file</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Engine.php.html#36"><abbr title="Engine::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Engine.php.html#52"><abbr title="Engine::handleSandBox">handleSandBox</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Engine.php.html#120"><abbr title="Engine::handleOBD">handleOBD</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Engine.php.html#171"><abbr title="Engine::init">init</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Engine.php.html#454"><abbr title="Engine::callFlow">callFlow</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Engine.php.html#692"><abbr title="Engine::sortIVRBasis">sortIVRBasis</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Landline.php.html#49"><abbr title="Landline::v2DbConf">v2DbConf</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Engine.php.html#755"><abbr title="Engine::preProcessNode">preProcessNode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Engine.php.html#772"><abbr title="Engine::initIVR">initIVR</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Engine.php.html#877"><abbr title="Engine::processNode">processNode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Engine.php.html#955"><abbr title="Engine::voicemail">voicemail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Engine.php.html#1045"><abbr title="Engine::initCompanySettings">initCompanySettings</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Engine.php.html#1092"><abbr title="Engine::informConsumer">informConsumer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Engine.php.html#1103"><abbr title="Engine::tests">tests</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Engine.php.html#1131"><abbr title="Engine::updateAllCaller">updateAllCaller</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Engine.php.html#1148"><abbr title="Engine::processNodeC">processNodeC</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="KamailioCache.php.html#39"><abbr title="KamailioCache::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="KamailioCache.php.html#48"><abbr title="KamailioCache::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Landline.php.html#7"><abbr title="Landline::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Landline.php.html#18"><abbr title="Landline::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Landline.php.html#28"><abbr title="Landline::terminateChannel">terminateChannel</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Welcome.php.html#168"><abbr title="Welcome::rt">rt</abbr></a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="CallProcessor.php.html#248"><abbr title="CallProcessor::calleeHungup">calleeHungup</abbr></a></td><td class="text-right">702</td></tr>
+       <tr><td><a href="ClickOCallNew.php.html#80"><abbr title="ClickOCallNew::index">index</abbr></a></td><td class="text-right">506</td></tr>
+       <tr><td><a href="Engine.php.html#171"><abbr title="Engine::init">init</abbr></a></td><td class="text-right">420</td></tr>
+       <tr><td><a href="Engine.php.html#877"><abbr title="Engine::processNode">processNode</abbr></a></td><td class="text-right">240</td></tr>
+       <tr><td><a href="Engine.php.html#772"><abbr title="Engine::initIVR">initIVR</abbr></a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="Engine.php.html#692"><abbr title="Engine::sortIVRBasis">sortIVRBasis</abbr></a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="Engine.php.html#1148"><abbr title="Engine::processNodeC">processNodeC</abbr></a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="CallProcessor.php.html#154"><abbr title="CallProcessor::agentAnswered">agentAnswered</abbr></a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="Engine.php.html#505"><abbr title="Engine::normalIVR">normalIVR</abbr></a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="ClickOCallNew.php.html#283"><abbr title="ClickOCallNew::dead">dead</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="CallProcessor.php.html#394"><abbr title="CallProcessor::updateVoicemail">updateVoicemail</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="Transfer.php.html#137"><abbr title="Transfer::index">index</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="LogVerifier.php.html#10"><abbr title="LogVerifier::index">index</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="Engine.php.html#120"><abbr title="Engine::handleOBD">handleOBD</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="Engine.php.html#955"><abbr title="Engine::voicemail">voicemail</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="Engine.php.html#1045"><abbr title="Engine::initCompanySettings">initCompanySettings</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Engine.php.html#52"><abbr title="Engine::handleSandBox">handleSandBox</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="CallProcessor.php.html#89"><abbr title="CallProcessor::callerHungup">callerHungup</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Engine.php.html#454"><abbr title="Engine::callFlow">callFlow</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Transfer.php.html#401"><abbr title="Transfer::setTransferrer">setTransferrer</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Transfer.php.html#229"><abbr title="Transfer::dailDepartmentUsers">dailDepartmentUsers</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="WebRtc.php.html#52"><abbr title="WebRtc::process">process</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Transfer.php.html#331"><abbr title="Transfer::dead">dead</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Welcome.php.html#61"><abbr title="Welcome::ttw">ttw</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="KamailioCache.php.html#48"><abbr title="KamailioCache::index">index</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="WebRtcTransfer.php.html#43"><abbr title="WebRtcTransfer::index">index</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="WebRtc.php.html#189"><abbr title="WebRtc::dead">dead</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Welcome.php.html#34"><abbr title="Welcome::xyz">xyz</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CallProcessor.php.html#10"><abbr title="CallProcessor::__construct">__construct</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Transfer.php.html#26"><abbr title="Transfer::__construct">__construct</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Test.php.html#39"><abbr title="Test::createWebrtc">createWebrtc</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="SyncLog.php.html#14"><abbr title="SyncLog::index">index</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Landline.php.html#49"><abbr title="Landline::v2DbConf">v2DbConf</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Landline.php.html#28"><abbr title="Landline::terminateChannel">terminateChannel</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Engine.php.html#755"><abbr title="Engine::preProcessNode">preProcessNode</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Transfer.php.html#86"><abbr title="Transfer::init">init</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Test.php.html#73"><abbr title="Test::testASM">testASM</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Transfer.php.html#309"><abbr title="Transfer::dialNow">dialNow</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Engine.php.html#1103"><abbr title="Engine::tests">tests</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ClickOCallNew.php.html#57"><abbr title="ClickOCallNew::init">init</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Welcome.php.html#154"><abbr title="Welcome::tests">tests</abbr></a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 6.0.7</a> using <a href="https://secure.php.net/" target="_top">PHP 7.2.10-0ubuntu0.18.04.1</a> with <a href="https://xdebug.org/">Xdebug 2.6.0</a> and <a href="https://phpunit.de/">PHPUnit 7.3.4</a> at Fri Jan 25 12:43:25 IST 2019.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../.js/jquery.min.js" type="text/javascript"></script>
+  <script src="../.js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../.js/holder.min.js" type="text/javascript"></script>
+  <script src="../.js/d3.min.js" type="text/javascript"></script>
+  <script src="../.js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([12,0,0,0,0,0,0,0,0,0,0,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([65,0,0,0,0,0,0,0,0,0,0,0], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,63,"<a href=\"CallProcessor.php.html#4\">CallProcessor<\/a>"],[0,38,"<a href=\"ClickOCallNew.php.html#4\">ClickOCallNew<\/a>"],[0,143,"<a href=\"Engine.php.html#10\">Engine<\/a>"],[0,5,"<a href=\"KamailioCache.php.html#28\">KamailioCache<\/a>"],[0,8,"<a href=\"Landline.php.html#4\">Landline<\/a>"],[0,12,"<a href=\"LogVerifier.php.html#4\">LogVerifier<\/a>"],[0,4,"<a href=\"SyncLog.php.html#4\">SyncLog<\/a>"],[0,10,"<a href=\"Test.php.html#5\">Test<\/a>"],[0,40,"<a href=\"Transfer.php.html#19\">Transfer<\/a>"],[0,11,"<a href=\"WebRtc.php.html#7\">WebRtc<\/a>"],[0,6,"<a href=\"WebRtcTransfer.php.html#7\">WebRtcTransfer<\/a>"],[0,14,"<a href=\"Welcome.php.html#4\">Welcome<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,3,"<a href=\"CallProcessor.php.html#10\">CallProcessor::__construct<\/a>"],[0,8,"<a href=\"CallProcessor.php.html#89\">CallProcessor::callerHungup<\/a>"],[0,14,"<a href=\"CallProcessor.php.html#154\">CallProcessor::agentAnswered<\/a>"],[0,26,"<a href=\"CallProcessor.php.html#248\">CallProcessor::calleeHungup<\/a>"],[0,12,"<a href=\"CallProcessor.php.html#394\">CallProcessor::updateVoicemail<\/a>"],[0,1,"<a href=\"ClickOCallNew.php.html#9\">ClickOCallNew::__construct<\/a>"],[0,2,"<a href=\"ClickOCallNew.php.html#57\">ClickOCallNew::init<\/a>"],[0,22,"<a href=\"ClickOCallNew.php.html#80\">ClickOCallNew::index<\/a>"],[0,12,"<a href=\"ClickOCallNew.php.html#283\">ClickOCallNew::dead<\/a>"],[0,1,"<a href=\"ClickOCallNew.php.html#455\">ClickOCallNew::set_sound_file<\/a>"],[0,1,"<a href=\"Engine.php.html#36\">Engine::__construct<\/a>"],[0,8,"<a href=\"Engine.php.html#52\">Engine::handleSandBox<\/a>"],[0,10,"<a href=\"Engine.php.html#120\">Engine::handleOBD<\/a>"],[0,20,"<a href=\"Engine.php.html#171\">Engine::init<\/a>"],[0,8,"<a href=\"Engine.php.html#454\">Engine::callFlow<\/a>"],[0,13,"<a href=\"Engine.php.html#505\">Engine::normalIVR<\/a>"],[0,14,"<a href=\"Engine.php.html#692\">Engine::sortIVRBasis<\/a>"],[0,3,"<a href=\"Engine.php.html#755\">Engine::preProcessNode<\/a>"],[0,14,"<a href=\"Engine.php.html#772\">Engine::initIVR<\/a>"],[0,15,"<a href=\"Engine.php.html#877\">Engine::processNode<\/a>"],[0,10,"<a href=\"Engine.php.html#955\">Engine::voicemail<\/a>"],[0,9,"<a href=\"Engine.php.html#1045\">Engine::initCompanySettings<\/a>"],[0,1,"<a href=\"Engine.php.html#1092\">Engine::informConsumer<\/a>"],[0,2,"<a href=\"Engine.php.html#1103\">Engine::tests<\/a>"],[0,1,"<a href=\"Engine.php.html#1131\">Engine::updateAllCaller<\/a>"],[0,14,"<a href=\"Engine.php.html#1148\">Engine::processNodeC<\/a>"],[0,1,"<a href=\"KamailioCache.php.html#39\">KamailioCache::__construct<\/a>"],[0,4,"<a href=\"KamailioCache.php.html#48\">KamailioCache::index<\/a>"],[0,1,"<a href=\"Landline.php.html#7\">Landline::__construct<\/a>"],[0,1,"<a href=\"Landline.php.html#18\">Landline::index<\/a>"],[0,3,"<a href=\"Landline.php.html#28\">Landline::terminateChannel<\/a>"],[0,3,"<a href=\"Landline.php.html#49\">Landline::v2DbConf<\/a>"],[0,1,"<a href=\"LogVerifier.php.html#6\">LogVerifier::__construct<\/a>"],[0,11,"<a href=\"LogVerifier.php.html#10\">LogVerifier::index<\/a>"],[0,1,"<a href=\"SyncLog.php.html#6\">SyncLog::__construct<\/a>"],[0,3,"<a href=\"SyncLog.php.html#14\">SyncLog::index<\/a>"],[0,1,"<a href=\"Test.php.html#7\">Test::__construct<\/a>"],[0,1,"<a href=\"Test.php.html#14\">Test::mt<\/a>"],[0,1,"<a href=\"Test.php.html#20\">Test::rt<\/a>"],[0,1,"<a href=\"Test.php.html#26\">Test::index<\/a>"],[0,3,"<a href=\"Test.php.html#39\">Test::createWebrtc<\/a>"],[0,1,"<a href=\"Test.php.html#59\">Test::testIVR<\/a>"],[0,2,"<a href=\"Test.php.html#73\">Test::testASM<\/a>"],[0,3,"<a href=\"Transfer.php.html#26\">Transfer::__construct<\/a>"],[0,1,"<a href=\"Transfer.php.html#78\">Transfer::set_sound_file<\/a>"],[0,2,"<a href=\"Transfer.php.html#86\">Transfer::init<\/a>"],[0,11,"<a href=\"Transfer.php.html#137\">Transfer::index<\/a>"],[0,7,"<a href=\"Transfer.php.html#229\">Transfer::dailDepartmentUsers<\/a>"],[0,2,"<a href=\"Transfer.php.html#309\">Transfer::dialNow<\/a>"],[0,6,"<a href=\"Transfer.php.html#331\">Transfer::dead<\/a>"],[0,8,"<a href=\"Transfer.php.html#401\">Transfer::setTransferrer<\/a>"],[0,1,"<a href=\"WebRtc.php.html#14\">WebRtc::__construct<\/a>"],[0,1,"<a href=\"WebRtc.php.html#36\">WebRtc::init<\/a>"],[0,6,"<a href=\"WebRtc.php.html#52\">WebRtc::process<\/a>"],[0,3,"<a href=\"WebRtc.php.html#189\">WebRtc::dead<\/a>"],[0,1,"<a href=\"WebRtcTransfer.php.html#12\">WebRtcTransfer::__construct<\/a>"],[0,1,"<a href=\"WebRtcTransfer.php.html#28\">WebRtcTransfer::init<\/a>"],[0,4,"<a href=\"WebRtcTransfer.php.html#43\">WebRtcTransfer::index<\/a>"],[0,1,"<a href=\"Welcome.php.html#23\">Welcome::__construct<\/a>"],[0,1,"<a href=\"Welcome.php.html#30\">Welcome::tt<\/a>"],[0,3,"<a href=\"Welcome.php.html#34\">Welcome::xyz<\/a>"],[0,5,"<a href=\"Welcome.php.html#61\">Welcome::ttw<\/a>"],[0,1,"<a href=\"Welcome.php.html#91\">Welcome::index<\/a>"],[0,2,"<a href=\"Welcome.php.html#154\">Welcome::tests<\/a>"],[0,1,"<a href=\"Welcome.php.html#168\">Welcome::rt<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

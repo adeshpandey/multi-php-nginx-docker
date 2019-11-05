@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/voicetree/vt-new/engine-v3/application/libraries</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../.css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../.css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href="../.css/style.css" rel="stylesheet" type="text/css">
+  <link href="../.css/custom.css" rel="stylesheet" type="text/css">
+  <!--[if lt IE 9]>
+  <script src="../.js/html5shiv.min.js"></script>
+  <script src="../.js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../index.html">/home/voicetree/vt-new/engine-v3/application</a></li>
+        <li><a href="index.html">libraries</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="AGI.php.html#45">AGI</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LibPhoneNumber.php.html#2">LibPhoneNumber</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NodeProcessor.php.html#4">NodeProcessor</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#42">AGI_AsteriskManager</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MemcachedLib.php.html#2">MemcachedLib</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NodeHandler.php.html#10">NodeHandler</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Dialer.php.html#2">Dialer</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Asterisk.php.html#2">Asterisk</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utilities.php.html#3">Utilities</a></td><td class="text-right">1%</td></tr>
+       <tr><td><a href="NumberParser.php.html#3">NumberParser</a></td><td class="text-right">2%</td></tr>
+       <tr><td><a href="AgentStatus.php.html#6">AgentStatus</a></td><td class="text-right">2%</td></tr>
+       <tr><td><a href="PreProcessor.php.html#2">PreProcessor</a></td><td class="text-right">4%</td></tr>
+       <tr><td><a href="PreCaller.php.html#4">PreCaller</a></td><td class="text-right">4%</td></tr>
+       <tr><td><a href="EngineLogger.php.html#3">EngineLogger</a></td><td class="text-right">9%</td></tr>
+       <tr><td><a href="ApiConnector.php.html#2">ApiConnector</a></td><td class="text-right">14%</td></tr>
+       <tr><td><a href="Plugin.php.html#2">Plugin</a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="PostProcessor.php.html#2">PostProcessor</a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Redis.php.html#7">Redis</a></td><td class="text-right">50%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="AGI.php.html#45">AGI</a></td><td class="text-right">79242</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#42">AGI_AsteriskManager</a></td><td class="text-right">18906</td></tr>
+       <tr><td><a href="Dialer.php.html#2">Dialer</a></td><td class="text-right">15006</td></tr>
+       <tr><td><a href="NodeHandler.php.html#10">NodeHandler</a></td><td class="text-right">7140</td></tr>
+       <tr><td><a href="Utilities.php.html#3">Utilities</a></td><td class="text-right">5806</td></tr>
+       <tr><td><a href="NodeProcessor.php.html#4">NodeProcessor</a></td><td class="text-right">3540</td></tr>
+       <tr><td><a href="MemcachedLib.php.html#2">MemcachedLib</a></td><td class="text-right">600</td></tr>
+       <tr><td><a href="AgentStatus.php.html#6">AgentStatus</a></td><td class="text-right">549</td></tr>
+       <tr><td><a href="NumberParser.php.html#3">NumberParser</a></td><td class="text-right">287</td></tr>
+       <tr><td><a href="PreProcessor.php.html#2">PreProcessor</a></td><td class="text-right">186</td></tr>
+       <tr><td><a href="PreCaller.php.html#4">PreCaller</a></td><td class="text-right">158</td></tr>
+       <tr><td><a href="Asterisk.php.html#2">Asterisk</a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="ApiConnector.php.html#2">ApiConnector</a></td><td class="text-right">47</td></tr>
+       <tr><td><a href="EngineLogger.php.html#3">EngineLogger</a></td><td class="text-right">23</td></tr>
+       <tr><td><a href="LibPhoneNumber.php.html#2">LibPhoneNumber</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Redis.php.html#7">Redis</a></td><td class="text-right">10</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="AGI.php.html#124"><abbr title="AGI::AGI">AGI</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Dialer.php.html#629"><abbr title="Dialer::serverReachable">serverReachable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Asterisk.php.html#47"><abbr title="Asterisk::getPlayFiles">getPlayFiles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Asterisk.php.html#62"><abbr title="Asterisk::playOnly">playOnly</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Dialer.php.html#5"><abbr title="Dialer::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Dialer.php.html#11"><abbr title="Dialer::dial">dial</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Dialer.php.html#131"><abbr title="Dialer::dialSip">dialSip</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Dialer.php.html#406"><abbr title="Dialer::dialDahdi">dialDahdi</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Dialer.php.html#570"><abbr title="Dialer::getMask">getMask</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Dialer.php.html#592"><abbr title="Dialer::isWebRTCOnline">isWebRTCOnline</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Dialer.php.html#648"><abbr title="Dialer::dialLocal">dialLocal</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Asterisk.php.html#7"><abbr title="Asterisk::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Dialer.php.html#690"><abbr title="Dialer::getLogDialStatus">getLogDialStatus</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EngineLogger.php.html#14"><abbr title="EngineLogger::init">init</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EngineLogger.php.html#24"><abbr title="EngineLogger::logMe">logMe</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LibPhoneNumber.php.html#4"><abbr title="LibPhoneNumber::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="LibPhoneNumber.php.html#7"><abbr title="LibPhoneNumber::parse">parse</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MemcachedLib.php.html#9"><abbr title="MemcachedLib::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MemcachedLib.php.html#47"><abbr title="MemcachedLib::auto_connect">auto_connect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MemcachedLib.php.html#65"><abbr title="MemcachedLib::set">set</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Asterisk.php.html#13"><abbr title="Asterisk::playAndGetData">playAndGetData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ApiConnector.php.html#16"><abbr title="ApiConnector::fetchAPI">fetchAPI</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MemcachedLib.php.html#115"><abbr title="MemcachedLib::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#907"><abbr title="AGI_AsteriskManager::database_show">database_show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#754"><abbr title="AGI_AsteriskManager::ZapDNDoff">ZapDNDoff</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#765"><abbr title="AGI_AsteriskManager::ZapDNDon">ZapDNDon</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#776"><abbr title="AGI_AsteriskManager::ZapHangup">ZapHangup</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#787"><abbr title="AGI_AsteriskManager::ZapTransfer">ZapTransfer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#798"><abbr title="AGI_AsteriskManager::ZapShowChannels">ZapShowChannels</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#816"><abbr title="AGI_AsteriskManager::log">log</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#865"><abbr title="AGI_AsteriskManager::add_event_handler">add_event_handler</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#884"><abbr title="AGI_AsteriskManager::process_event">process_event</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#952"><abbr title="AGI_AsteriskManager::database_put">database_put</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AgentStatus.php.html#99"><abbr title="AgentStatus::checkAgentInResponse">checkAgentInResponse</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#967"><abbr title="AGI_AsteriskManager::database_get">database_get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#992"><abbr title="AGI_AsteriskManager::database_del">database_del</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#1005"><abbr title="AGI_AsteriskManager::database_deltree">database_deltree</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#1018"><abbr title="AGI_AsteriskManager::func_exists">func_exists</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AgentStatus.php.html#14"><abbr title="AgentStatus::isAgentBusy">isAgentBusy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AgentStatus.php.html#26"><abbr title="AgentStatus::getActiveCalls">getActiveCalls</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AgentStatus.php.html#46"><abbr title="AgentStatus::checkAgentStatus">checkAgentStatus</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AgentStatus.php.html#62"><abbr title="AgentStatus::getActiveCallsForAgents">getActiveCallsForAgents</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AgentStatus.php.html#76"><abbr title="AgentStatus::getAgentsStatus">getAgentsStatus</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MemcachedLib.php.html#94"><abbr title="MemcachedLib::get">get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MemcachedLib.php.html#127"><abbr title="MemcachedLib::flush">flush</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#214"><abbr title="AGI::answer">answer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PreProcessor.php.html#86"><abbr title="PreProcessor::feedback">feedback</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NumberParser.php.html#35"><abbr title="NumberParser::indiaNumber">indiaNumber</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NumberParser.php.html#72"><abbr title="NumberParser::parseNumber">parseNumber</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Plugin.php.html#6"><abbr title="Plugin::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PostProcessor.php.html#12"><abbr title="PostProcessor::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PreCaller.php.html#14"><abbr title="PreCaller::prepare">prepare</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PreProcessor.php.html#13"><abbr title="PreProcessor::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PreProcessor.php.html#31"><abbr title="PreProcessor::mCureApi">mCureApi</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PreProcessor.php.html#66"><abbr title="PreProcessor::numberOwn">numberOwn</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utilities.php.html#10"><abbr title="Utilities::companyHasBalance">companyHasBalance</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NodeProcessor.php.html#444"><abbr title="NodeProcessor::callAfterMenuNumber">callAfterMenuNumber</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utilities.php.html#48"><abbr title="Utilities::checkCompanyBalance">checkCompanyBalance</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utilities.php.html#82"><abbr title="Utilities::checkMissDial">checkMissDial</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utilities.php.html#125"><abbr title="Utilities::linesAvailable">linesAvailable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utilities.php.html#169"><abbr title="Utilities::validKeyInResult">validKeyInResult</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utilities.php.html#189"><abbr title="Utilities::fetchSandBoxIVR">fetchSandBoxIVR</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utilities.php.html#209"><abbr title="Utilities::downloadTTSFile">downloadTTSFile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utilities.php.html#251"><abbr title="Utilities::geLinesUsed">geLinesUsed</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utilities.php.html#273"><abbr title="Utilities::checkLinesUsed">checkLinesUsed</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utilities.php.html#296"><abbr title="Utilities::contactInES">contactInES</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NumberParser.php.html#10"><abbr title="NumberParser::filterNumber">filterNumber</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NodeProcessor.php.html#408"><abbr title="NodeProcessor::dialOBD">dialOBD</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MemcachedLib.php.html#139"><abbr title="MemcachedLib::getversion">getversion</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NodeHandler.php.html#510"><abbr title="NodeHandler::checkVoicemail">checkVoicemail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MemcachedLib.php.html#152"><abbr title="MemcachedLib::getstats">getstats</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MemcachedLib.php.html#174"><abbr title="MemcachedLib::setcompressthreshold">setcompressthreshold</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NodeHandler.php.html#14"><abbr title="NodeHandler::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NodeHandler.php.html#20"><abbr title="NodeHandler::menuHandler">menuHandler</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NodeHandler.php.html#161"><abbr title="NodeHandler::handleDepartment">handleDepartment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NodeHandler.php.html#324"><abbr title="NodeHandler::handleExtension">handleExtension</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NodeHandler.php.html#407"><abbr title="NodeHandler::handleLanguage">handleLanguage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NodeHandler.php.html#439"><abbr title="NodeHandler::handleNodeC">handleNodeC</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NodeProcessor.php.html#9"><abbr title="NodeProcessor::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NodeProcessor.php.html#311"><abbr title="NodeProcessor::tryParallelExtensions">tryParallelExtensions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NodeProcessor.php.html#15"><abbr title="NodeProcessor::dialExtension">dialExtension</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NodeProcessor.php.html#43"><abbr title="NodeProcessor::dialStickyAgent">dialStickyAgent</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NodeProcessor.php.html#59"><abbr title="NodeProcessor::dialContact">dialContact</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NodeProcessor.php.html#106"><abbr title="NodeProcessor::dialSingleNumber">dialSingleNumber</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NodeProcessor.php.html#164"><abbr title="NodeProcessor::setSoundFile">setSoundFile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NodeProcessor.php.html#170"><abbr title="NodeProcessor::dialSerial">dialSerial</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NodeProcessor.php.html#180"><abbr title="NodeProcessor::tryExtensions">tryExtensions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NodeProcessor.php.html#232"><abbr title="NodeProcessor::dialExtensions">dialExtensions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NodeProcessor.php.html#301"><abbr title="NodeProcessor::dialParallel">dialParallel</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#743"><abbr title="AGI_AsteriskManager::ZapDialOffhook">ZapDialOffhook</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#731"><abbr title="AGI_AsteriskManager::StopMontor">StopMontor</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#718"><abbr title="AGI_AsteriskManager::Status">Status</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#759"><abbr title="AGI::exec_setaccountcode">exec_setaccountcode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#621"><abbr title="AGI::set_priority">set_priority</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#639"><abbr title="AGI::set_variable">set_variable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#659"><abbr title="AGI::stream_file">stream_file</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#671"><abbr title="AGI::tdd_mode">tdd_mode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#691"><abbr title="AGI::verbose">verbose</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#710"><abbr title="AGI::wait_for_digit">wait_for_digit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#733"><abbr title="AGI::exec_absolutetimeout">exec_absolutetimeout</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#746"><abbr title="AGI::exec_agi">exec_agi</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#770"><abbr title="AGI::exec_setlanguage">exec_setlanguage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#592"><abbr title="AGI::set_extension">set_extension</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#782"><abbr title="AGI::exec_sipaddheader">exec_sipaddheader</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#793"><abbr title="AGI::set_alertinfo">set_alertinfo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#807"><abbr title="AGI::exec_enumlookup">exec_enumlookup</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#828"><abbr title="AGI::exec_dial">exec_dial</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#844"><abbr title="AGI::exec_goto">exec_goto</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#865"><abbr title="AGI::fastpass_say_digits">fastpass_say_digits</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#894"><abbr title="AGI::fastpass_say_number">fastpass_say_number</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#923"><abbr title="AGI::fastpass_say_phonetic">fastpass_say_phonetic</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#605"><abbr title="AGI::set_music">set_music</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#574"><abbr title="AGI::set_context">set_context</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#984"><abbr title="AGI::fastpass_stream_file">fastpass_stream_file</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#388"><abbr title="AGI::hangup">hangup</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#226"><abbr title="AGI::channel_status">channel_status</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#255"><abbr title="AGI::database_del">database_del</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#268"><abbr title="AGI::database_deltree">database_deltree</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#283"><abbr title="AGI::database_get">database_get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#296"><abbr title="AGI::database_put">database_put</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#311"><abbr title="AGI::exec">exec</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#354"><abbr title="AGI::get_data">get_data</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#369"><abbr title="AGI::get_variable">get_variable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#399"><abbr title="AGI::noop">noop</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#556"><abbr title="AGI::set_callerid">set_callerid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#413"><abbr title="AGI::receive_char">receive_char</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#434"><abbr title="AGI::record_file">record_file</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#451"><abbr title="AGI::say_digits">say_digits</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#465"><abbr title="AGI::say_number">say_number</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#479"><abbr title="AGI::say_phonetic">say_phonetic</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#493"><abbr title="AGI::say_time">say_time</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#509"><abbr title="AGI::send_image">send_image</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#524"><abbr title="AGI::send_text">send_text</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#539"><abbr title="AGI::set_autohangup">set_autohangup</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#952"><abbr title="AGI::fastpass_say_time">fastpass_say_time</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#1013"><abbr title="AGI::fastpass_text2wav">fastpass_text2wav</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#706"><abbr title="AGI_AsteriskManager::SetVar">SetVar</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#526"><abbr title="AGI_AsteriskManager::MailboxStatus">MailboxStatus</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#412"><abbr title="AGI_AsteriskManager::Events">Events</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#426"><abbr title="AGI_AsteriskManager::ExtensionState">ExtensionState</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#442"><abbr title="AGI_AsteriskManager::GetVar">GetVar</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#455"><abbr title="AGI_AsteriskManager::Hangup">Hangup</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#465"><abbr title="AGI_AsteriskManager::IAXPeers">IAXPeers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#476"><abbr title="AGI_AsteriskManager::ListCommands">ListCommands</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#489"><abbr title="AGI_AsteriskManager::Logoff">Logoff</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#507"><abbr title="AGI_AsteriskManager::MailboxCount">MailboxCount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#542"><abbr title="AGI_AsteriskManager::Monitor">Monitor</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#1042"><abbr title="AGI::fastpass_swift">fastpass_swift</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#568"><abbr title="AGI_AsteriskManager::Originate">Originate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#598"><abbr title="AGI_AsteriskManager::ParkedCalls">ParkedCalls</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#611"><abbr title="AGI_AsteriskManager::Ping">Ping</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#624"><abbr title="AGI_AsteriskManager::QueueAdd">QueueAdd</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#638"><abbr title="AGI_AsteriskManager::QueueRemove">QueueRemove</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#648"><abbr title="AGI_AsteriskManager::Queues">Queues</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#659"><abbr title="AGI_AsteriskManager::QueueStatus">QueueStatus</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#677"><abbr title="AGI_AsteriskManager::Redirect">Redirect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#691"><abbr title="AGI_AsteriskManager::SetCDRUserField">SetCDRUserField</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#399"><abbr title="AGI_AsteriskManager::Command">Command</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#385"><abbr title="AGI_AsteriskManager::ChangeMonitor">ChangeMonitor</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#373"><abbr title="AGI_AsteriskManager::AbsoluteTimeout">AbsoluteTimeout</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#1504"><abbr title="AGI::new_AsteriskManager">new_AsteriskManager</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#1070"><abbr title="AGI::fastpass_say_punctuation">fastpass_say_punctuation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#1125"><abbr title="AGI::fastpass_get_data">fastpass_get_data</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#1165"><abbr title="AGI::menu">menu</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#1210"><abbr title="AGI::goto_dest">goto_dest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#1228"><abbr title="AGI::parse_callerid">parse_callerid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#1280"><abbr title="AGI::text2wav">text2wav</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#1332"><abbr title="AGI::swift">swift</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#1389"><abbr title="AGI::text_input">text_input</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#1456"><abbr title="AGI::say_punctuation">say_punctuation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utilities.php.html#317"><abbr title="Utilities::isClidBlackListed">isClidBlackListed</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#353"><abbr title="AGI_AsteriskManager::disconnect">disconnect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#1524"><abbr title="AGI::evaluate">evaluate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#1638"><abbr title="AGI::conlog">conlog</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#1658"><abbr title="AGI::which">which</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI.php.html#1683"><abbr title="AGI::make_folder">make_folder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#140"><abbr title="AGI_AsteriskManager::AGI_AsteriskManager">AGI_AsteriskManager</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#164"><abbr title="AGI_AsteriskManager::LoadAstDB">LoadAstDB</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#176"><abbr title="AGI_AsteriskManager::send_request">send_request</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#219"><abbr title="AGI_AsteriskManager::wait_response">wait_response</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#292"><abbr title="AGI_AsteriskManager::connect">connect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Redis.php.html#31"><abbr title="Redis::__call">__call</abbr></a></td><td class="text-right">23%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Dialer.php.html#131"><abbr title="Dialer::dialSip">dialSip</abbr></a></td><td class="text-right">1722</td></tr>
+       <tr><td><a href="AGI.php.html#1456"><abbr title="AGI::say_punctuation">say_punctuation</abbr></a></td><td class="text-right">1260</td></tr>
+       <tr><td><a href="Dialer.php.html#406"><abbr title="Dialer::dialDahdi">dialDahdi</abbr></a></td><td class="text-right">930</td></tr>
+       <tr><td><a href="NodeHandler.php.html#161"><abbr title="NodeHandler::handleDepartment">handleDepartment</abbr></a></td><td class="text-right">756</td></tr>
+       <tr><td><a href="AGI.php.html#1524"><abbr title="AGI::evaluate">evaluate</abbr></a></td><td class="text-right">756</td></tr>
+       <tr><td><a href="Dialer.php.html#11"><abbr title="Dialer::dial">dial</abbr></a></td><td class="text-right">506</td></tr>
+       <tr><td><a href="AGI.php.html#124"><abbr title="AGI::AGI">AGI</abbr></a></td><td class="text-right">420</td></tr>
+       <tr><td><a href="NodeHandler.php.html#20"><abbr title="NodeHandler::menuHandler">menuHandler</abbr></a></td><td class="text-right">380</td></tr>
+       <tr><td><a href="AGI.php.html#1389"><abbr title="AGI::text_input">text_input</abbr></a></td><td class="text-right">342</td></tr>
+       <tr><td><a href="NodeHandler.php.html#439"><abbr title="NodeHandler::handleNodeC">handleNodeC</abbr></a></td><td class="text-right">240</td></tr>
+       <tr><td><a href="Utilities.php.html#82"><abbr title="Utilities::checkMissDial">checkMissDial</abbr></a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#568"><abbr title="AGI_AsteriskManager::Originate">Originate</abbr></a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#219"><abbr title="AGI_AsteriskManager::wait_response">wait_response</abbr></a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#140"><abbr title="AGI_AsteriskManager::AGI_AsteriskManager">AGI_AsteriskManager</abbr></a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="AGI.php.html#1165"><abbr title="AGI::menu">menu</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="PreCaller.php.html#14"><abbr title="PreCaller::prepare">prepare</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="AGI.php.html#226"><abbr title="AGI::channel_status">channel_status</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="NodeProcessor.php.html#232"><abbr title="NodeProcessor::dialExtensions">dialExtensions</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="NodeHandler.php.html#324"><abbr title="NodeHandler::handleExtension">handleExtension</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="Utilities.php.html#169"><abbr title="Utilities::validKeyInResult">validKeyInResult</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#907"><abbr title="AGI_AsteriskManager::database_show">database_show</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="NodeProcessor.php.html#311"><abbr title="NodeProcessor::tryParallelExtensions">tryParallelExtensions</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="Utilities.php.html#48"><abbr title="Utilities::checkCompanyBalance">checkCompanyBalance</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="Utilities.php.html#296"><abbr title="Utilities::contactInES">contactInES</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="AGI.php.html#1125"><abbr title="AGI::fastpass_get_data">fastpass_get_data</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Dialer.php.html#648"><abbr title="Dialer::dialLocal">dialLocal</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="AGI.php.html#1332"><abbr title="AGI::swift">swift</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Utilities.php.html#125"><abbr title="Utilities::linesAvailable">linesAvailable</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#292"><abbr title="AGI_AsteriskManager::connect">connect</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="AGI.php.html#984"><abbr title="AGI::fastpass_stream_file">fastpass_stream_file</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="AGI.php.html#923"><abbr title="AGI::fastpass_say_phonetic">fastpass_say_phonetic</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="AGI.php.html#952"><abbr title="AGI::fastpass_say_time">fastpass_say_time</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="AGI.php.html#894"><abbr title="AGI::fastpass_say_number">fastpass_say_number</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="AGI.php.html#1013"><abbr title="AGI::fastpass_text2wav">fastpass_text2wav</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="AGI.php.html#1042"><abbr title="AGI::fastpass_swift">fastpass_swift</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="AGI.php.html#1070"><abbr title="AGI::fastpass_say_punctuation">fastpass_say_punctuation</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="AGI.php.html#865"><abbr title="AGI::fastpass_say_digits">fastpass_say_digits</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="ApiConnector.php.html#16"><abbr title="ApiConnector::fetchAPI">fetchAPI</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="NodeProcessor.php.html#106"><abbr title="NodeProcessor::dialSingleNumber">dialSingleNumber</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="NodeProcessor.php.html#59"><abbr title="NodeProcessor::dialContact">dialContact</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="NumberParser.php.html#35"><abbr title="NumberParser::indiaNumber">indiaNumber</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="AGI.php.html#1280"><abbr title="AGI::text2wav">text2wav</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Utilities.php.html#10"><abbr title="Utilities::companyHasBalance">companyHasBalance</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="AGI.php.html#1658"><abbr title="AGI::which">which</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#176"><abbr title="AGI_AsteriskManager::send_request">send_request</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="NodeProcessor.php.html#408"><abbr title="NodeProcessor::dialOBD">dialOBD</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Dialer.php.html#690"><abbr title="Dialer::getLogDialStatus">getLogDialStatus</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="AGI.php.html#1228"><abbr title="AGI::parse_callerid">parse_callerid</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="PreProcessor.php.html#31"><abbr title="PreProcessor::mCureApi">mCureApi</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Dialer.php.html#592"><abbr title="Dialer::isWebRTCOnline">isWebRTCOnline</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Utilities.php.html#273"><abbr title="Utilities::checkLinesUsed">checkLinesUsed</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="AgentStatus.php.html#46"><abbr title="AgentStatus::checkAgentStatus">checkAgentStatus</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="NodeHandler.php.html#510"><abbr title="NodeHandler::checkVoicemail">checkVoicemail</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="AgentStatus.php.html#99"><abbr title="AgentStatus::checkAgentInResponse">checkAgentInResponse</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="NumberParser.php.html#72"><abbr title="NumberParser::parseNumber">parseNumber</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="MemcachedLib.php.html#9"><abbr title="MemcachedLib::__construct">__construct</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Dialer.php.html#570"><abbr title="Dialer::getMask">getMask</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="NodeHandler.php.html#407"><abbr title="NodeHandler::handleLanguage">handleLanguage</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="NodeProcessor.php.html#180"><abbr title="NodeProcessor::tryExtensions">tryExtensions</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="AgentStatus.php.html#76"><abbr title="AgentStatus::getAgentsStatus">getAgentsStatus</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#542"><abbr title="AGI_AsteriskManager::Monitor">Monitor</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#967"><abbr title="AGI_AsteriskManager::database_get">database_get</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Utilities.php.html#317"><abbr title="Utilities::isClidBlackListed">isClidBlackListed</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#884"><abbr title="AGI_AsteriskManager::process_event">process_event</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="AGI.php.html#1638"><abbr title="AGI::conlog">conlog</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="AGI.php.html#1683"><abbr title="AGI::make_folder">make_folder</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="NumberParser.php.html#10"><abbr title="NumberParser::filterNumber">filterNumber</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Asterisk.php.html#13"><abbr title="Asterisk::playAndGetData">playAndGetData</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="MemcachedLib.php.html#65"><abbr title="MemcachedLib::set">set</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="NodeProcessor.php.html#15"><abbr title="NodeProcessor::dialExtension">dialExtension</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Redis.php.html#31"><abbr title="Redis::__call">__call</abbr></a></td><td class="text-right">16</td></tr>
+       <tr><td><a href="AgentStatus.php.html#62"><abbr title="AgentStatus::getActiveCallsForAgents">getActiveCallsForAgents</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="MemcachedLib.php.html#115"><abbr title="MemcachedLib::delete">delete</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="PreProcessor.php.html#13"><abbr title="PreProcessor::execute">execute</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Asterisk.php.html#62"><abbr title="Asterisk::playOnly">playOnly</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="PreProcessor.php.html#66"><abbr title="PreProcessor::numberOwn">numberOwn</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="MemcachedLib.php.html#152"><abbr title="MemcachedLib::getstats">getstats</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="AGI.php.html#434"><abbr title="AGI::record_file">record_file</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="MemcachedLib.php.html#94"><abbr title="MemcachedLib::get">get</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#816"><abbr title="AGI_AsteriskManager::log">log</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#952"><abbr title="AGI_AsteriskManager::database_put">database_put</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#399"><abbr title="AGI_AsteriskManager::Command">Command</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#353"><abbr title="AGI_AsteriskManager::disconnect">disconnect</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#164"><abbr title="AGI_AsteriskManager::LoadAstDB">LoadAstDB</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AGI.php.html#268"><abbr title="AGI::database_deltree">database_deltree</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AGI.php.html#311"><abbr title="AGI::exec">exec</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Utilities.php.html#251"><abbr title="Utilities::geLinesUsed">geLinesUsed</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Asterisk.php.html#47"><abbr title="Asterisk::getPlayFiles">getPlayFiles</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AGI.php.html#691"><abbr title="AGI::verbose">verbose</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AGI.php.html#605"><abbr title="AGI::set_music">set_music</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AGI.php.html#493"><abbr title="AGI::say_time">say_time</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NodeProcessor.php.html#444"><abbr title="NodeProcessor::callAfterMenuNumber">callAfterMenuNumber</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Utilities.php.html#189"><abbr title="Utilities::fetchSandBoxIVR">fetchSandBoxIVR</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Utilities.php.html#209"><abbr title="Utilities::downloadTTSFile">downloadTTSFile</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AgentStatus.php.html#14"><abbr title="AgentStatus::isAgentBusy">isAgentBusy</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Dialer.php.html#629"><abbr title="Dialer::serverReachable">serverReachable</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#426"><abbr title="AGI_AsteriskManager::ExtensionState">ExtensionState</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#659"><abbr title="AGI_AsteriskManager::QueueStatus">QueueStatus</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="EngineLogger.php.html#14"><abbr title="EngineLogger::init">init</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="EngineLogger.php.html#24"><abbr title="EngineLogger::logMe">logMe</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="LibPhoneNumber.php.html#7"><abbr title="LibPhoneNumber::parse">parse</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="MemcachedLib.php.html#47"><abbr title="MemcachedLib::auto_connect">auto_connect</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="MemcachedLib.php.html#174"><abbr title="MemcachedLib::setcompressthreshold">setcompressthreshold</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#798"><abbr title="AGI_AsteriskManager::ZapShowChannels">ZapShowChannels</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#718"><abbr title="AGI_AsteriskManager::Status">Status</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#691"><abbr title="AGI_AsteriskManager::SetCDRUserField">SetCDRUserField</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#624"><abbr title="AGI_AsteriskManager::QueueAdd">QueueAdd</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#442"><abbr title="AGI_AsteriskManager::GetVar">GetVar</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#598"><abbr title="AGI_AsteriskManager::ParkedCalls">ParkedCalls</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#992"><abbr title="AGI_AsteriskManager::database_del">database_del</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NodeProcessor.php.html#43"><abbr title="NodeProcessor::dialStickyAgent">dialStickyAgent</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#1005"><abbr title="AGI_AsteriskManager::database_deltree">database_deltree</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#526"><abbr title="AGI_AsteriskManager::MailboxStatus">MailboxStatus</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="NodeProcessor.php.html#170"><abbr title="NodeProcessor::dialSerial">dialSerial</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#865"><abbr title="AGI_AsteriskManager::add_event_handler">add_event_handler</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#476"><abbr title="AGI_AsteriskManager::ListCommands">ListCommands</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="AGI_AsteriskManager.php.html#507"><abbr title="AGI_AsteriskManager::MailboxCount">MailboxCount</abbr></a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 6.0.7</a> using <a href="https://secure.php.net/" target="_top">PHP 7.2.10-0ubuntu0.18.04.1</a> with <a href="https://xdebug.org/">Xdebug 2.6.0</a> and <a href="https://phpunit.de/">PHPUnit 7.3.4</a> at Fri Jan 25 12:43:25 IST 2019.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../.js/jquery.min.js" type="text/javascript"></script>
+  <script src="../.js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../.js/holder.min.js" type="text/javascript"></script>
+  <script src="../.js/d3.min.js" type="text/javascript"></script>
+  <script src="../.js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([8,6,1,0,0,0,3,0,0,0,0,1], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([181,0,0,1,0,0,0,0,0,0,0,14], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,281,"<a href=\"AGI.php.html#45\">AGI<\/a>"],[0,137,"<a href=\"AGI_AsteriskManager.php.html#42\">AGI_AsteriskManager<\/a>"],[2.9850746268656714,24,"<a href=\"AgentStatus.php.html#6\">AgentStatus<\/a>"],[14.814814814814813,8,"<a href=\"ApiConnector.php.html#2\">ApiConnector<\/a>"],[0,10,"<a href=\"Asterisk.php.html#2\">Asterisk<\/a>"],[100,10,"<a href=\"DedicatedLogic.php.html#3\">DedicatedLogic<\/a>"],[0,122,"<a href=\"Dialer.php.html#2\">Dialer<\/a>"],[9.090909090909092,5,"<a href=\"EngineLogger.php.html#3\">EngineLogger<\/a>"],[0,3,"<a href=\"LibPhoneNumber.php.html#2\">LibPhoneNumber<\/a>"],[0,24,"<a href=\"MemcachedLib.php.html#2\">MemcachedLib<\/a>"],[0,84,"<a href=\"NodeHandler.php.html#10\">NodeHandler<\/a>"],[0,59,"<a href=\"NodeProcessor.php.html#4\">NodeProcessor<\/a>"],[2.1739130434782608,17,"<a href=\"NumberParser.php.html#3\">NumberParser<\/a>"],[50,2,"<a href=\"Plugin.php.html#2\">Plugin<\/a>"],[50,2,"<a href=\"PostProcessor.php.html#2\">PostProcessor<\/a>"],[4.761904761904762,13,"<a href=\"PreCaller.php.html#4\">PreCaller<\/a>"],[4.081632653061225,14,"<a href=\"PreProcessor.php.html#2\">PreProcessor<\/a>"],[50,6,"<a href=\"Redis.php.html#7\">Redis<\/a>"],[1.1363636363636365,77,"<a href=\"Utilities.php.html#3\">Utilities<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,20,"<a href=\"AGI.php.html#124\">AGI::AGI<\/a>"],[0,1,"<a href=\"AGI.php.html#214\">AGI::answer<\/a>"],[0,12,"<a href=\"AGI.php.html#226\">AGI::channel_status<\/a>"],[0,1,"<a href=\"AGI.php.html#255\">AGI::database_del<\/a>"],[0,2,"<a href=\"AGI.php.html#268\">AGI::database_deltree<\/a>"],[0,1,"<a href=\"AGI.php.html#283\">AGI::database_get<\/a>"],[0,1,"<a href=\"AGI.php.html#296\">AGI::database_put<\/a>"],[0,2,"<a href=\"AGI.php.html#311\">AGI::exec<\/a>"],[0,1,"<a href=\"AGI.php.html#354\">AGI::get_data<\/a>"],[0,1,"<a href=\"AGI.php.html#369\">AGI::get_variable<\/a>"],[0,1,"<a href=\"AGI.php.html#388\">AGI::hangup<\/a>"],[0,1,"<a href=\"AGI.php.html#399\">AGI::noop<\/a>"],[0,1,"<a href=\"AGI.php.html#413\">AGI::receive_char<\/a>"],[0,3,"<a href=\"AGI.php.html#434\">AGI::record_file<\/a>"],[0,1,"<a href=\"AGI.php.html#451\">AGI::say_digits<\/a>"],[0,1,"<a href=\"AGI.php.html#465\">AGI::say_number<\/a>"],[0,1,"<a href=\"AGI.php.html#479\">AGI::say_phonetic<\/a>"],[0,2,"<a href=\"AGI.php.html#493\">AGI::say_time<\/a>"],[0,1,"<a href=\"AGI.php.html#509\">AGI::send_image<\/a>"],[0,1,"<a href=\"AGI.php.html#524\">AGI::send_text<\/a>"],[0,1,"<a href=\"AGI.php.html#539\">AGI::set_autohangup<\/a>"],[0,1,"<a href=\"AGI.php.html#556\">AGI::set_callerid<\/a>"],[0,1,"<a href=\"AGI.php.html#574\">AGI::set_context<\/a>"],[0,1,"<a href=\"AGI.php.html#592\">AGI::set_extension<\/a>"],[0,2,"<a href=\"AGI.php.html#605\">AGI::set_music<\/a>"],[0,1,"<a href=\"AGI.php.html#621\">AGI::set_priority<\/a>"],[0,1,"<a href=\"AGI.php.html#639\">AGI::set_variable<\/a>"],[0,1,"<a href=\"AGI.php.html#659\">AGI::stream_file<\/a>"],[0,1,"<a href=\"AGI.php.html#671\">AGI::tdd_mode<\/a>"],[0,2,"<a href=\"AGI.php.html#691\">AGI::verbose<\/a>"],[0,1,"<a href=\"AGI.php.html#710\">AGI::wait_for_digit<\/a>"],[0,1,"<a href=\"AGI.php.html#733\">AGI::exec_absolutetimeout<\/a>"],[0,1,"<a href=\"AGI.php.html#746\">AGI::exec_agi<\/a>"],[0,1,"<a href=\"AGI.php.html#759\">AGI::exec_setaccountcode<\/a>"],[0,1,"<a href=\"AGI.php.html#770\">AGI::exec_setlanguage<\/a>"],[0,1,"<a href=\"AGI.php.html#782\">AGI::exec_sipaddheader<\/a>"],[0,1,"<a href=\"AGI.php.html#793\">AGI::set_alertinfo<\/a>"],[0,1,"<a href=\"AGI.php.html#807\">AGI::exec_enumlookup<\/a>"],[0,1,"<a href=\"AGI.php.html#828\">AGI::exec_dial<\/a>"],[0,1,"<a href=\"AGI.php.html#844\">AGI::exec_goto<\/a>"],[0,8,"<a href=\"AGI.php.html#865\">AGI::fastpass_say_digits<\/a>"],[0,8,"<a href=\"AGI.php.html#894\">AGI::fastpass_say_number<\/a>"],[0,8,"<a href=\"AGI.php.html#923\">AGI::fastpass_say_phonetic<\/a>"],[0,8,"<a href=\"AGI.php.html#952\">AGI::fastpass_say_time<\/a>"],[0,8,"<a href=\"AGI.php.html#984\">AGI::fastpass_stream_file<\/a>"],[0,8,"<a href=\"AGI.php.html#1013\">AGI::fastpass_text2wav<\/a>"],[0,8,"<a href=\"AGI.php.html#1042\">AGI::fastpass_swift<\/a>"],[0,8,"<a href=\"AGI.php.html#1070\">AGI::fastpass_say_punctuation<\/a>"],[0,9,"<a href=\"AGI.php.html#1125\">AGI::fastpass_get_data<\/a>"],[0,12,"<a href=\"AGI.php.html#1165\">AGI::menu<\/a>"],[0,1,"<a href=\"AGI.php.html#1210\">AGI::goto_dest<\/a>"],[0,6,"<a href=\"AGI.php.html#1228\">AGI::parse_callerid<\/a>"],[0,7,"<a href=\"AGI.php.html#1280\">AGI::text2wav<\/a>"],[0,9,"<a href=\"AGI.php.html#1332\">AGI::swift<\/a>"],[0,18,"<a href=\"AGI.php.html#1389\">AGI::text_input<\/a>"],[0,35,"<a href=\"AGI.php.html#1456\">AGI::say_punctuation<\/a>"],[0,1,"<a href=\"AGI.php.html#1504\">AGI::new_AsteriskManager<\/a>"],[0,27,"<a href=\"AGI.php.html#1524\">AGI::evaluate<\/a>"],[0,4,"<a href=\"AGI.php.html#1638\">AGI::conlog<\/a>"],[0,7,"<a href=\"AGI.php.html#1658\">AGI::which<\/a>"],[0,4,"<a href=\"AGI.php.html#1683\">AGI::make_folder<\/a>"],[0,13,"<a href=\"AGI_AsteriskManager.php.html#140\">AGI_AsteriskManager::AGI_AsteriskManager<\/a>"],[0,2,"<a href=\"AGI_AsteriskManager.php.html#164\">AGI_AsteriskManager::LoadAstDB<\/a>"],[0,7,"<a href=\"AGI_AsteriskManager.php.html#176\">AGI_AsteriskManager::send_request<\/a>"],[0,13,"<a href=\"AGI_AsteriskManager.php.html#219\">AGI_AsteriskManager::wait_response<\/a>"],[0,8,"<a href=\"AGI_AsteriskManager.php.html#292\">AGI_AsteriskManager::connect<\/a>"],[0,2,"<a href=\"AGI_AsteriskManager.php.html#353\">AGI_AsteriskManager::disconnect<\/a>"],[0,1,"<a href=\"AGI_AsteriskManager.php.html#373\">AGI_AsteriskManager::AbsoluteTimeout<\/a>"],[0,1,"<a href=\"AGI_AsteriskManager.php.html#385\">AGI_AsteriskManager::ChangeMonitor<\/a>"],[0,2,"<a href=\"AGI_AsteriskManager.php.html#399\">AGI_AsteriskManager::Command<\/a>"],[0,1,"<a href=\"AGI_AsteriskManager.php.html#412\">AGI_AsteriskManager::Events<\/a>"],[0,2,"<a href=\"AGI_AsteriskManager.php.html#426\">AGI_AsteriskManager::ExtensionState<\/a>"],[0,2,"<a href=\"AGI_AsteriskManager.php.html#442\">AGI_AsteriskManager::GetVar<\/a>"],[0,1,"<a href=\"AGI_AsteriskManager.php.html#455\">AGI_AsteriskManager::Hangup<\/a>"],[0,1,"<a href=\"AGI_AsteriskManager.php.html#465\">AGI_AsteriskManager::IAXPeers<\/a>"],[0,2,"<a href=\"AGI_AsteriskManager.php.html#476\">AGI_AsteriskManager::ListCommands<\/a>"],[0,1,"<a href=\"AGI_AsteriskManager.php.html#489\">AGI_AsteriskManager::Logoff<\/a>"],[0,2,"<a href=\"AGI_AsteriskManager.php.html#507\">AGI_AsteriskManager::MailboxCount<\/a>"],[0,2,"<a href=\"AGI_AsteriskManager.php.html#526\">AGI_AsteriskManager::MailboxStatus<\/a>"],[0,5,"<a href=\"AGI_AsteriskManager.php.html#542\">AGI_AsteriskManager::Monitor<\/a>"],[0,13,"<a href=\"AGI_AsteriskManager.php.html#568\">AGI_AsteriskManager::Originate<\/a>"],[0,2,"<a href=\"AGI_AsteriskManager.php.html#598\">AGI_AsteriskManager::ParkedCalls<\/a>"],[0,1,"<a href=\"AGI_AsteriskManager.php.html#611\">AGI_AsteriskManager::Ping<\/a>"],[0,2,"<a href=\"AGI_AsteriskManager.php.html#624\">AGI_AsteriskManager::QueueAdd<\/a>"],[0,1,"<a href=\"AGI_AsteriskManager.php.html#638\">AGI_AsteriskManager::QueueRemove<\/a>"],[0,1,"<a href=\"AGI_AsteriskManager.php.html#648\">AGI_AsteriskManager::Queues<\/a>"],[0,2,"<a href=\"AGI_AsteriskManager.php.html#659\">AGI_AsteriskManager::QueueStatus<\/a>"],[0,1,"<a href=\"AGI_AsteriskManager.php.html#677\">AGI_AsteriskManager::Redirect<\/a>"],[0,2,"<a href=\"AGI_AsteriskManager.php.html#691\">AGI_AsteriskManager::SetCDRUserField<\/a>"],[0,1,"<a href=\"AGI_AsteriskManager.php.html#706\">AGI_AsteriskManager::SetVar<\/a>"],[0,2,"<a href=\"AGI_AsteriskManager.php.html#718\">AGI_AsteriskManager::Status<\/a>"],[0,1,"<a href=\"AGI_AsteriskManager.php.html#731\">AGI_AsteriskManager::StopMontor<\/a>"],[0,1,"<a href=\"AGI_AsteriskManager.php.html#743\">AGI_AsteriskManager::ZapDialOffhook<\/a>"],[0,1,"<a href=\"AGI_AsteriskManager.php.html#754\">AGI_AsteriskManager::ZapDNDoff<\/a>"],[0,1,"<a href=\"AGI_AsteriskManager.php.html#765\">AGI_AsteriskManager::ZapDNDon<\/a>"],[0,1,"<a href=\"AGI_AsteriskManager.php.html#776\">AGI_AsteriskManager::ZapHangup<\/a>"],[0,1,"<a href=\"AGI_AsteriskManager.php.html#787\">AGI_AsteriskManager::ZapTransfer<\/a>"],[0,2,"<a href=\"AGI_AsteriskManager.php.html#798\">AGI_AsteriskManager::ZapShowChannels<\/a>"],[0,3,"<a href=\"AGI_AsteriskManager.php.html#816\">AGI_AsteriskManager::log<\/a>"],[0,2,"<a href=\"AGI_AsteriskManager.php.html#865\">AGI_AsteriskManager::add_event_handler<\/a>"],[0,4,"<a href=\"AGI_AsteriskManager.php.html#884\">AGI_AsteriskManager::process_event<\/a>"],[0,11,"<a href=\"AGI_AsteriskManager.php.html#907\">AGI_AsteriskManager::database_show<\/a>"],[0,3,"<a href=\"AGI_AsteriskManager.php.html#952\">AGI_AsteriskManager::database_put<\/a>"],[0,5,"<a href=\"AGI_AsteriskManager.php.html#967\">AGI_AsteriskManager::database_get<\/a>"],[0,2,"<a href=\"AGI_AsteriskManager.php.html#992\">AGI_AsteriskManager::database_del<\/a>"],[0,2,"<a href=\"AGI_AsteriskManager.php.html#1005\">AGI_AsteriskManager::database_deltree<\/a>"],[0,1,"<a href=\"AGI_AsteriskManager.php.html#1018\">AGI_AsteriskManager::func_exists<\/a>"],[100,1,"<a href=\"AgentStatus.php.html#9\">AgentStatus::__construct<\/a>"],[0,2,"<a href=\"AgentStatus.php.html#14\">AgentStatus::isAgentBusy<\/a>"],[0,1,"<a href=\"AgentStatus.php.html#26\">AgentStatus::getActiveCalls<\/a>"],[0,6,"<a href=\"AgentStatus.php.html#46\">AgentStatus::checkAgentStatus<\/a>"],[0,3,"<a href=\"AgentStatus.php.html#62\">AgentStatus::getActiveCallsForAgents<\/a>"],[0,5,"<a href=\"AgentStatus.php.html#76\">AgentStatus::getAgentsStatus<\/a>"],[0,6,"<a href=\"AgentStatus.php.html#99\">AgentStatus::checkAgentInResponse<\/a>"],[100,1,"<a href=\"ApiConnector.php.html#8\">ApiConnector::__construct<\/a>"],[0,7,"<a href=\"ApiConnector.php.html#16\">ApiConnector::fetchAPI<\/a>"],[0,1,"<a href=\"Asterisk.php.html#7\">Asterisk::__construct<\/a>"],[0,4,"<a href=\"Asterisk.php.html#13\">Asterisk::playAndGetData<\/a>"],[0,2,"<a href=\"Asterisk.php.html#47\">Asterisk::getPlayFiles<\/a>"],[0,3,"<a href=\"Asterisk.php.html#62\">Asterisk::playOnly<\/a>"],[100,1,"<a href=\"DedicatedLogic.php.html#5\">DedicatedLogic::__construct<\/a>"],[100,5,"<a href=\"DedicatedLogic.php.html#10\">DedicatedLogic::fetchCallerId<\/a>"],[100,3,"<a href=\"DedicatedLogic.php.html#28\">DedicatedLogic::isOutGoingNumberValid<\/a>"],[100,1,"<a href=\"DedicatedLogic.php.html#61\">DedicatedLogic::fetchCompanySettings<\/a>"],[0,1,"<a href=\"Dialer.php.html#5\">Dialer::__construct<\/a>"],[0,22,"<a href=\"Dialer.php.html#11\">Dialer::dial<\/a>"],[0,41,"<a href=\"Dialer.php.html#131\">Dialer::dialSip<\/a>"],[0,30,"<a href=\"Dialer.php.html#406\">Dialer::dialDahdi<\/a>"],[0,5,"<a href=\"Dialer.php.html#570\">Dialer::getMask<\/a>"],[0,6,"<a href=\"Dialer.php.html#592\">Dialer::isWebRTCOnline<\/a>"],[0,2,"<a href=\"Dialer.php.html#629\">Dialer::serverReachable<\/a>"],[0,9,"<a href=\"Dialer.php.html#648\">Dialer::dialLocal<\/a>"],[0,6,"<a href=\"Dialer.php.html#690\">Dialer::getLogDialStatus<\/a>"],[100,1,"<a href=\"EngineLogger.php.html#8\">EngineLogger::__construct<\/a>"],[0,2,"<a href=\"EngineLogger.php.html#14\">EngineLogger::init<\/a>"],[0,2,"<a href=\"EngineLogger.php.html#24\">EngineLogger::logMe<\/a>"],[0,1,"<a href=\"LibPhoneNumber.php.html#4\">LibPhoneNumber::__construct<\/a>"],[0,2,"<a href=\"LibPhoneNumber.php.html#7\">LibPhoneNumber::parse<\/a>"],[0,5,"<a href=\"MemcachedLib.php.html#9\">MemcachedLib::__construct<\/a>"],[0,2,"<a href=\"MemcachedLib.php.html#47\">MemcachedLib::auto_connect<\/a>"],[0,4,"<a href=\"MemcachedLib.php.html#65\">MemcachedLib::set<\/a>"],[0,3,"<a href=\"MemcachedLib.php.html#94\">MemcachedLib::get<\/a>"],[0,3,"<a href=\"MemcachedLib.php.html#115\">MemcachedLib::delete<\/a>"],[0,1,"<a href=\"MemcachedLib.php.html#127\">MemcachedLib::flush<\/a>"],[0,1,"<a href=\"MemcachedLib.php.html#139\">MemcachedLib::getversion<\/a>"],[0,3,"<a href=\"MemcachedLib.php.html#152\">MemcachedLib::getstats<\/a>"],[0,2,"<a href=\"MemcachedLib.php.html#174\">MemcachedLib::setcompressthreshold<\/a>"],[0,1,"<a href=\"NodeHandler.php.html#14\">NodeHandler::__construct<\/a>"],[0,19,"<a href=\"NodeHandler.php.html#20\">NodeHandler::menuHandler<\/a>"],[0,27,"<a href=\"NodeHandler.php.html#161\">NodeHandler::handleDepartment<\/a>"],[0,11,"<a href=\"NodeHandler.php.html#324\">NodeHandler::handleExtension<\/a>"],[0,5,"<a href=\"NodeHandler.php.html#407\">NodeHandler::handleLanguage<\/a>"],[0,15,"<a href=\"NodeHandler.php.html#439\">NodeHandler::handleNodeC<\/a>"],[0,6,"<a href=\"NodeHandler.php.html#510\">NodeHandler::checkVoicemail<\/a>"],[0,1,"<a href=\"NodeProcessor.php.html#9\">NodeProcessor::__construct<\/a>"],[0,4,"<a href=\"NodeProcessor.php.html#15\">NodeProcessor::dialExtension<\/a>"],[0,2,"<a href=\"NodeProcessor.php.html#43\">NodeProcessor::dialStickyAgent<\/a>"],[0,7,"<a href=\"NodeProcessor.php.html#59\">NodeProcessor::dialContact<\/a>"],[0,7,"<a href=\"NodeProcessor.php.html#106\">NodeProcessor::dialSingleNumber<\/a>"],[0,1,"<a href=\"NodeProcessor.php.html#164\">NodeProcessor::setSoundFile<\/a>"],[0,2,"<a href=\"NodeProcessor.php.html#170\">NodeProcessor::dialSerial<\/a>"],[0,5,"<a href=\"NodeProcessor.php.html#180\">NodeProcessor::tryExtensions<\/a>"],[0,11,"<a href=\"NodeProcessor.php.html#232\">NodeProcessor::dialExtensions<\/a>"],[0,1,"<a href=\"NodeProcessor.php.html#301\">NodeProcessor::dialParallel<\/a>"],[0,10,"<a href=\"NodeProcessor.php.html#311\">NodeProcessor::tryParallelExtensions<\/a>"],[0,6,"<a href=\"NodeProcessor.php.html#408\">NodeProcessor::dialOBD<\/a>"],[0,2,"<a href=\"NodeProcessor.php.html#444\">NodeProcessor::callAfterMenuNumber<\/a>"],[100,1,"<a href=\"NumberParser.php.html#6\">NumberParser::__construct<\/a>"],[0,4,"<a href=\"NumberParser.php.html#10\">NumberParser::filterNumber<\/a>"],[0,7,"<a href=\"NumberParser.php.html#35\">NumberParser::indiaNumber<\/a>"],[0,5,"<a href=\"NumberParser.php.html#72\">NumberParser::parseNumber<\/a>"],[100,1,"<a href=\"Plugin.php.html#3\">Plugin::__construct<\/a>"],[0,1,"<a href=\"Plugin.php.html#6\">Plugin::execute<\/a>"],[100,1,"<a href=\"PostProcessor.php.html#7\">PostProcessor::__construct<\/a>"],[0,1,"<a href=\"PostProcessor.php.html#12\">PostProcessor::execute<\/a>"],[100,1,"<a href=\"PreCaller.php.html#9\">PreCaller::__construct<\/a>"],[0,12,"<a href=\"PreCaller.php.html#14\">PreCaller::prepare<\/a>"],[100,1,"<a href=\"PreProcessor.php.html#7\">PreProcessor::__construct<\/a>"],[0,3,"<a href=\"PreProcessor.php.html#13\">PreProcessor::execute<\/a>"],[0,6,"<a href=\"PreProcessor.php.html#31\">PreProcessor::mCureApi<\/a>"],[0,3,"<a href=\"PreProcessor.php.html#66\">PreProcessor::numberOwn<\/a>"],[0,1,"<a href=\"PreProcessor.php.html#86\">PreProcessor::feedback<\/a>"],[100,1,"<a href=\"Redis.php.html#15\">Redis::__construct<\/a>"],[23.076923076923077,5,"<a href=\"Redis.php.html#31\">Redis::__call<\/a>"],[100,1,"<a href=\"Utilities.php.html#6\">Utilities::__construct<\/a>"],[0,7,"<a href=\"Utilities.php.html#10\">Utilities::companyHasBalance<\/a>"],[0,10,"<a href=\"Utilities.php.html#48\">Utilities::checkCompanyBalance<\/a>"],[0,13,"<a href=\"Utilities.php.html#82\">Utilities::checkMissDial<\/a>"],[0,9,"<a href=\"Utilities.php.html#125\">Utilities::linesAvailable<\/a>"],[0,11,"<a href=\"Utilities.php.html#169\">Utilities::validKeyInResult<\/a>"],[0,2,"<a href=\"Utilities.php.html#189\">Utilities::fetchSandBoxIVR<\/a>"],[0,2,"<a href=\"Utilities.php.html#209\">Utilities::downloadTTSFile<\/a>"],[0,2,"<a href=\"Utilities.php.html#251\">Utilities::geLinesUsed<\/a>"],[0,6,"<a href=\"Utilities.php.html#273\">Utilities::checkLinesUsed<\/a>"],[0,10,"<a href=\"Utilities.php.html#296\">Utilities::contactInES<\/a>"],[0,4,"<a href=\"Utilities.php.html#317\">Utilities::isClidBlackListed<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

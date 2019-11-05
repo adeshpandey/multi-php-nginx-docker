@@ -1,0 +1,23 @@
+version: "3"
+services:
+  php:
+    hostname: app-2
+    container_name: app-2
+    image: crunchgeek/php-fpm:7.2
+    working_dir: /app-2
+    volumes:
+      - .:/app-2:delegated
+      - ../nginx/infrastructure:/config:delegated
+    networks:
+      - ci-app-1_php-network
+    environment:
+      # more info at: https://github.com/markhilton/docker-php-fpm
+      - PHP_UID=9000
+      - PHP_GID=9000
+      - PHP_USER=php-fpm
+      - PHP_HOME=/app-2
+      - PHP_POOL_PATH=/config/www.conf
+
+networks:
+  ci-app-1_php-network:
+    external: true

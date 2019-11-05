@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="DedicatedLogic_test" file="/home/voicetree/vt-new/engine-v3/application/tests/libraries/DedicatedLogic_test.php" tests="3" assertions="3" errors="0" failures="0" skipped="0" time="0.103617">
+    <testcase name="test_fetchCallerId" class="DedicatedLogic_test" classname="DedicatedLogic_test" file="/home/voicetree/vt-new/engine-v3/application/tests/libraries/DedicatedLogic_test.php" line="49" assertions="1" time="0.044069">
+      <system-out>
+verbose - ["Outgoing numbers: [\n    \"2249280797\"\n]"]
+</system-out>
+    </testcase>
+    <testcase name="test_fetchCallerId_if_wrong_outgoing" class="DedicatedLogic_test" classname="DedicatedLogic_test" file="/home/voicetree/vt-new/engine-v3/application/tests/libraries/DedicatedLogic_test.php" line="55" assertions="1" time="0.029774">
+      <system-out>
+verbose - ["Outgoing numbers: [\n    \"2249280797\"\n]"]
+</system-out>
+    </testcase>
+    <testcase name="test_fetchCallerId_if_no_mask" class="DedicatedLogic_test" classname="DedicatedLogic_test" file="/home/voicetree/vt-new/engine-v3/application/tests/libraries/DedicatedLogic_test.php" line="61" assertions="1" time="0.029774"/>
+  </testsuite>
+</testsuites>

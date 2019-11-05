@@ -1,0 +1,31 @@
+version: "3.1"
+services:
+  nginx:
+    hostname: nginx-ci
+    container_name: nginx-ci
+    image: crunchgeek/nginx-pagespeed:latest
+    working_dir: /app-1
+    volumes:
+      - ../ci-app-1:/app-1:delegated
+      - ../ci-app-2:/app-2:delegated
+      - ./infrastructure:/config:delegated
+    ports:
+      - "80:80"
+    external_links:
+      - app-1
+      - app-2
+    networks:
+      - ci-app-1_php-network
+    environment:
+      # more info at: https://github.com/markhilton/docker-nginx-pagespeed
+      - NGINX_INCLUDE_PATH=/config/nginx.conf
+      - NGINX_FASTCGI_GEOIP=on
+      - NGINX_DEFAULT_SERVER=off
+      - NGINX_PAGESPEED=off
+      - NGINX_PAGESPEED_JS=off
+      - NGINX_PAGESPEED_CSS=off
+      - NGINX_PAGESPEED_IMG=off
+      - NGINX_PAGESPEED_STORAGE=files
+networks:
+  ci-app-1_php-network:
+    external: true
